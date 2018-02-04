@@ -3,13 +3,15 @@ This is a Class of Ship
 '''
 
 import pygame
+from pygame.sprite import Sprite
 
 
-class Ship():
+class Ship(Sprite):
     ''' a Class of Ship'''
 
     def __init__(self, set, screen):
         '''init ship'''
+        super(Ship, self).__init__()
         self.screen = screen
         self.set = set
 
